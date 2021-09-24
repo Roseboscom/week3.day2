@@ -1,0 +1,47 @@
+package week3.assignments;
+
+public interface HardWare {
+	
+	public void hardwareResources();
+	
+
+}
+-------------------------------------------------------
+
+package week3.assignments;
+
+public interface Software {
+	
+	public void software();
+
+
+}
+
+-------------------------------------------------------------------
+
+
+
+package week3.assignments;
+
+public class Desktop implements Software,HardWare {
+	
+	public void hardwareResources() {
+		System.out.println(" HardWare Resources");
+	}
+
+	public void software() {
+		System.out.println("Software");
+	}
+	public void desktopModel()
+	{
+		System.out.println("Desktop model");
+	}
+	public static void main(String[] args) {
+		
+	Desktop d=new Desktop();
+	d.hardwareResources();
+	d.software();
+	d.desktopModel();
+
+	}
+}
